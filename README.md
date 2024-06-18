@@ -1,3 +1,3 @@
 # READ THE DOCUMENTATION HERE
 
-https://docs.page/acme/aksilia/ak-docs
+https://docs.page/aksilia/ak-docs
