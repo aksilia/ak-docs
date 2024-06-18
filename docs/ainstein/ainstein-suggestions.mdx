@@ -1,1 +1,38 @@
 # Ainstein suggestion
+
+## Cos'è?
+
+Ainstein suggestions è uno strumento implementato in alcune sezioni di aksilia suite in grado di generare suggerimenti su come compilare alcuni moduli attraverso l'intelligenza artificale.
+
+## Come funziona?
+
+All base di tutto ci sono 3 concetti da capire
+
+- Prompt
+- Esempio
+- Campo
+
+### Prompt
+Il prompt è la frase che viene mandata al modello per generare il suggerimento. Il prompt è composto da una o più frasi che descrivono si vuole generare tramite il suggerimento.
+
+### Esempio
+L'esempio è il testo che viene generato dal modello. L'esempio è composto da una o più frasi che descrivono come compilare il modulo.
+
+### Campo
+Il campo è un concetto che viene implementato sia nei prompt che negli esempi. Sono delle `variabili` che vengono sostituite con i valori reali del modulo. Facciamo un esempio per capire meglio.
+
+#### Esempio
+```
+Prompt: Compila il modulo con i seguenti dati: Nome: <nomePersona> Cognome: <cognomePersona>
+Esempio: Compila il modulo con i seguenti dati: Nome: <nomePersona> Cognome: <cognomePersona>
+```
+
+In questo caso il campo è `<nomePersona>` e `<cognomePersona>`. Questi campi verranno sostituiti con i valori reali del modulo.
+
+#### Requisiti dei campi
+
+- i campi devono essere inseriti tramite `<` e `>`
+- i nomi dei campi devono essere scritti in camelCase
+- i nomi dei campi non devono contenere spazi
+- i nomi dei campi non devono contenere caratteri speciali
+- i nomi dei campi vengono salvati e possono essere usati per altri prompt, meglio quindi non farli troppo generici come `campo1`, `percentuale`, `nome` ecc...
