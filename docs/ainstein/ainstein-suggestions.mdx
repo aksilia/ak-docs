@@ -22,14 +22,6 @@ L'esempio è il testo che viene generato dal modello. L'esempio è composto da u
 ### Campo
 Il campo è un concetto che viene implementato sia nei prompt che negli esempi. Sono delle `variabili` che vengono sostituite con i valori reali del modulo. Facciamo un esempio per capire meglio.
 
-#### Esempio
-```
-Prompt: Compila il modulo con i seguenti dati: Nome: <nomePersona> Cognome: <cognomePersona>
-Esempio: Compila il modulo con i seguenti dati: Nome: <nomePersona> Cognome: <cognomePersona>
-```
-
-In questo caso il campo è `<nomePersona>` e `<cognomePersona>`. Questi campi verranno sostituiti con i valori reali del modulo.
-
 #### Requisiti dei campi
 
 - i campi devono essere inseriti tramite `<` e `>`
@@ -42,3 +34,11 @@ I campi hanno la proprietà `label` che permette di dare un nome più descrittiv
 
 ### Collezioni
 Le collezioni sono insiemi di file e risorse che vengono usate come contesto per generare i suggerimenti. Le collezioni possono essere trasversali a più moduli o specifiche per un modulo.
+
+#### Esempio
+```
+Prompt: Compila il modulo con i seguenti dati: Nome: <nomePersona> Cognome: <cognomePersona>
+Esempio: Compila il modulo con i seguenti dati: Nome: <nomePersona> Cognome: <cognomePersona>
+```
+
+In questo caso il campo è `<nomePersona>` e `<cognomePersona>`. Questi campi verranno sostituiti con i valori reali del modulo.
