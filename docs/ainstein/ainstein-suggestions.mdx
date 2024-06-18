@@ -1,0 +1,18 @@
+from suggestion_tool import AI_SuggestionTool
+
+# Initialize the AI suggestion tool
+suggestion_tool = AI_SuggestionTool()
+
+# Define the question and variables
+question = "How can I improve my coding skills?"
+variables = {
+    "language": "Python",
+    "platform": "GitHub",
+    "experience": "beginner"
+}
+
+# Generate a sample answer using the AI suggestion tool
+sample_answer = suggestion_tool.generate_answer(question, variables)
+
+# Print the sample answer
+print(sample_answer)
