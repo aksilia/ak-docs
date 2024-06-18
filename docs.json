@@ -4,6 +4,6 @@
     "sidebar": [
       ["Home", "/"],
       ["Another Page", "/another-page"],
-      ["Ainstein Suggestions", "/ainstein/ainstein-suggestions"]
+      ["Ainstein Suggestions", "/ainstein/ainstein-suggestions.mdx"]
     ]
   }
